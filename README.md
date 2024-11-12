@@ -1,44 +1,67 @@
-# Density DevOps Homework Assignment
+# DevOps Engineer Hiring Task
+
+Welcome! This assignment is designed to showcase your skills in building, deploying, and managing applications in Kubernetes and cloud-native environments.
 
 ## Goal
 
-Your goal is to show how you would build, and deploy the included applications
-using Kubernetes and cloud-native tooling.
+Demonstrate your ability to:
+1. Containerize applications.
+2. Deploy them in a Kubernetes environment.
+3. Set up a continuous delivery (CD) pipeline with cloud-native tools.
 
-## Assignment
+## Task Overview
 
-Your task is to accomplish the following:
+You will accomplish the following:
 
-- Build a small Kubernetes test cluster either locally or in the cloud. A single
-  node is fine. Feel free to use Terraform with a cloud provider or an
-  all-in-one tool for a local cluster
-- Build Docker files for both sample applications (applications must return
-  correct results)
-- Build a deployment mechanism for these apps
-- Describe a plan for continuous delivery with the specific tools/vendors you'd
-  look at and your evaluation criteria for them
+1. **Kubernetes Test Cluster Setup**
+   - Build a small Kubernetes test cluster, either locally (using tools like **Minikube** or **Kind**) or in the cloud.
+   - A single-node cluster is sufficient, but feel free to expand as needed.
+   
+2. **Application Containerization**
+   - Create Dockerfiles for the provided applications (`app_a` and `app_b`), ensuring they run correctly in their containers and return expected results.
+   
+3. **Deployment Mechanism in Kubernetes**
+   - Develop a repeatable deployment mechanism for both applications within Kubernetes.
+   
+4. **Continuous Delivery Plan**
+   - Outline a CD plan for these applications. Specify the tools/vendors you would consider and your evaluation criteria for choosing them.
 
 ## Deliverables
 
-We'd like to see a repo with the following:
+Create a GitHub repository with the following:
 
-- A Dockerfile for each application
-- Repeatable deployment mechanism for each application
-- A README with the set-up process so we can run it ourselves
-- A text file with a brief write-up about brief the following:
-  - Continuous Delivery plan for the app ecosystem
-  - Discussion of tools chosen, and how you would 
-- Well-written git commit messages to show your progress. (Hint: we can't tell
-  if  you rebase! :wink: )
-  
-## Bonus Points for Any of the Following
+1. **Dockerfiles for Each Application**  
+   - Separate Dockerfiles for `app_a` and `app_b`.
+   
+2. **Repeatable Deployment Mechanism**  
+   - A deployment script (e.g., `deploy.sh`) or Kubernetes configuration files (e.g., YAML manifests) for deploying each application.
 
-- Separate build and deploy stages in your Dockerfiles
-- Automated local or cloud-based Kubernetes environment for testing
+3. **Documentation**  
+   - A **README.md** with setup instructions so we can run the applications ourselves.
+   - A short document (e.g., `CD_Plan.txt`) outlining:
+     - Your continuous delivery plan.
+     - Your chosen tools and the rationale behind each choice.
 
-Create a new repo using your Github account with a unique name and send us the
-final product! If you'd prefer to make the repo private, that's fine too! When
-you're ready, you can add us as collaborators.
+4. **Commit History**  
+   - Meaningful and well-organized git commit messages to demonstrate your approach.
+   - Each commit should describe its purpose and changes clearly.
+
+---
+
+## Bonus Points
+
+To stand out, consider adding any of the following:
+
+- **Multi-stage Docker Builds**: Separate stages in Dockerfiles for building and running the applications.
+- **Automated Kubernetes Environment**: Script or configuration for an automated setup of a local or cloud-based Kubernetes environment.
+
+---
+
+## Submission
+
+1. **Repository**: Create a new GitHub repository with a unique name for this assignment.
+2. **Privacy**: If you prefer, keep the repository private and add us as collaborators.
+3. **Avoid Forks or PRs**: Do not fork this task’s repo or submit pull requests.
 
 
 ## Notes
